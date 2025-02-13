@@ -1,0 +1,67 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/phase-banner.html" %}
+  {% include "includes/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Check your changes
+      </h1>
+
+      <!-- <p class="govuk-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p class="govuk-body">
+          <a href="#" class="govuk-link">View account XXOFFNWB</a>.
+        </p> 
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-bottom-6">
+
+      <h2 class="govuk-heading-m">
+        Changes made
+      </h2> -->
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Text before change</th>
+            <th scope="col" class="govuk-table__header">Text after change</th>
+            <th scope="col" class="govuk-table__header"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">test</td>
+            <td class="govuk-table__cell">REDACTED</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Undo change</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Second</td>
+            <td class="govuk-table__cell">REDACTED</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Undo change</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <a href="success" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </a>
+
+      <p class="govuk-body">
+        <a href="start" class="govuk-link">Make further changes</a>.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}
