@@ -39,20 +39,20 @@
           </tr>
         </thead>
         <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Mr A Test</td>
-            <td class="govuk-table__cell">REDACTED</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Undo change</a></td>
+          <tr class="govuk-table__row" id="change_1">
+            <td class="govuk-table__cell">Ben Testington</td>
+            <td class="govuk-table__cell">Ben REDACTED</td>
+            <td class="govuk-table__cell"><a href="javascript:undo_click('change_1')" class="govuk-link">Undo change</a></td>
           </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Tester Street</td>
-            <td class="govuk-table__cell">REDACTED</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Undo change</a></td>
+          <tr class="govuk-table__row" id="change_2">
+            <td class="govuk-table__cell">Mr B Testington</td>
+            <td class="govuk-table__cell">Mr B REDACTED</td>
+            <td class="govuk-table__cell"><a href="javascript:undo_click('change_2')" class="govuk-link">Undo change</a></td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell"></td>
             <td class="govuk-table__cell"></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Undo all changes</a></td>
+            <td class="govuk-table__cell"><a href="start" class="govuk-link">Undo all changes</a></td>
           </tr>
         </tbody>
       </table>
@@ -68,4 +68,8 @@
     </div>
   </div>
 
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/application.js"></script>
 {% endblock %}

@@ -40,21 +40,57 @@
           </tr>
         </thead>
         <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Mr A Test</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
+          <tr class="govuk-table__row" id="result_1">
+            <td class="govuk-table__cell" id="result_1_text">Ben Testington</td>
+            <td class="govuk-table__cell">
+              <a href="javascript:change_click('result_1')" class="govuk-link">Change</a>
+            </td>
           </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Tester Street</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
-          </tr>
-          <tr class="govuk-table__row">
+          <tr class="govuk-table__row govuk-visually-hidden" id="result_1_expanded">
             <td class="govuk-table__cell">Ben Testington</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
+            <td class="govuk-table__cell">
+              <textarea class="govuk-textarea" id="result_1_textbox" name="result_1_textbox" rows="3">Ben Testington</textarea>
+              <a href="javascript:save_click('result_1')" class="govuk-link">Save</a>
+            </td>
           </tr>
-          <tr class="govuk-table__row">
+          <tr class="govuk-table__row" id="result_2">
+            <td class="govuk-table__cell" id="result_2_text">Tester Street</td>
+            <td class="govuk-table__cell">
+              <a href="javascript:change_click('result_2')" class="govuk-link">Change</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row govuk-visually-hidden" id="result_2_expanded">
+            <td class="govuk-table__cell">Tester Street</td>
+            <td class="govuk-table__cell">
+              <textarea class="govuk-textarea" id="result_2_textbox" name="result_2_textbox" rows="3">Tester Street</textarea>
+              <a href="javascript:save_click('result_2')" class="govuk-link">Save</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row" id="result_3">
+            <td class="govuk-table__cell" id="result_3_text">Mr B Testington</td>
+            <td class="govuk-table__cell">
+              <a href="javascript:change_click('result_3')" class="govuk-link">Change</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row govuk-visually-hidden" id="result_3_expanded">
+            <td class="govuk-table__cell">Mr B Testington</td>
+            <td class="govuk-table__cell">
+              <textarea class="govuk-textarea" id="result_3_textbox" name="result_3_textbox" rows="3">Mr B Testington</textarea>
+              <a href="javascript:save_click('result_3')" class="govuk-link">Save</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row" id="result_4">
+            <td class="govuk-table__cell" id="result_4_text">Test Ltd</td>
+            <td class="govuk-table__cell">
+              <a href="javascript:change_click('result_4')" class="govuk-link">Change</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row govuk-visually-hidden" id="result_4_expanded">
             <td class="govuk-table__cell">Test Ltd</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
+            <td class="govuk-table__cell">
+              <textarea class="govuk-textarea" id="result_4_textbox" name="result_4_textbox" rows="3">Test Ltd</textarea>
+              <a href="javascript:save_click('result_4')" class="govuk-link">Save</a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -65,4 +101,8 @@
     </div>
   </div>
 
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/application.js"></script>
 {% endblock %}
