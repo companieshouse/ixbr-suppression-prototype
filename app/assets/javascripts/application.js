@@ -64,8 +64,8 @@ function save_click(resultValue) {
   } else if (resultValue == 'result_3') {
       var result_three = document.getElementById('result_3');
       var result_three_expanded = document.getElementById('result_3_expanded');
-      var result_three_new_text = document.getElementById('result_2_textbox');
-      var result_three_text = document.getElementById('result_2_text');
+      var result_three_new_text = document.getElementById('result_3_textbox');
+      var result_three_text = document.getElementById('result_3_text');
 
       result_three.classList.remove('govuk-visually-hidden');
       result_three_expanded.classList.add('govuk-visually-hidden');
@@ -75,8 +75,8 @@ function save_click(resultValue) {
   } else if (resultValue == 'result_4') {
       var result_four = document.getElementById('result_4');
       var result_four_expanded = document.getElementById('result_4_expanded');
-      var result_four_new_text = document.getElementById('result_2_textbox');
-      var result_four_text = document.getElementById('result_2_text');
+      var result_four_new_text = document.getElementById('result_4_textbox');
+      var result_four_text = document.getElementById('result_4_text');
 
       result_four.classList.remove('govuk-visually-hidden');
       result_four_expanded.classList.add('govuk-visually-hidden');
