@@ -98,3 +98,10 @@ function undo_click(changeValue) {
       change_two.classList.add('govuk-visually-hidden');
   }
 }
+
+
+function replace_click() {
+  var result_one_new_text = document.getElementById('result_1_textbox');
+
+  result_one_new_text.value = 'Ben ##########';
+}
