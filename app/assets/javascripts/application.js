@@ -100,8 +100,14 @@ function undo_click(changeValue) {
 }
 
 
-function replace_click() {
-  var result_one_new_text = document.getElementById('result_1_textbox');
+function replace_click(resultValue) {
+  if (resultValue == 'result_1') {
+    var result_one_new_text = document.getElementById('result_1_textbox');
 
-  result_one_new_text.value = 'Ben ##########';
+    result_one_new_text.value = 'Ben ##########';
+  } else if (resultValue == 'result_3') {
+    var result_one_new_text = document.getElementById('result_3_textbox');
+
+    result_one_new_text.value = 'Mr B ##########';
+  }
 }
