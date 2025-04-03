@@ -10,10 +10,10 @@
 
 {% block content %}
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
 
       <h1 class="govuk-heading-l">
-        View original accounts
+        Redaction of accounts
       </h1>
 
         <p class="govuk-body">
@@ -25,11 +25,11 @@
 
       <div class="govuk-form-group">
         <h2 class="govuk-label-wrapper">
-          <label class="govuk-label govuk-label--m" for="event-name">
-            Search for information to suppress
+          <label class="govuk-label govuk-label--m" for="search">
+            Search for data to suppress
           </label>
         </h2>
-        <input class="govuk-input" id="event-name" name="eventName" type="text" aria-describedby="event-name-hint" value="test">
+        <input class="govuk-input govuk-input--width-20" id="search" name="search" type="text">
       </div>
 
       <table class="govuk-table">
@@ -43,7 +43,7 @@
           <tr class="govuk-table__row" id="result_1">
             <td class="govuk-table__cell" id="result_1_text">Ben Testington</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_1')" class="govuk-link">Change</a>
+              <a href="javascript:change_click('result_1')" class="govuk-link">Redact</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_1_expanded">
@@ -58,7 +58,7 @@
           <tr class="govuk-table__row" id="result_2">
             <td class="govuk-table__cell" id="result_2_text">Tester Street</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_2')" class="govuk-link">Change</a>
+              <a href="javascript:change_click('result_2')" class="govuk-link">Redact</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_2_expanded">
@@ -73,7 +73,7 @@
           <tr class="govuk-table__row" id="result_3">
             <td class="govuk-table__cell" id="result_3_text">Mr B Testington</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_3')" class="govuk-link">Change</a>
+              <a href="javascript:change_click('result_3')" class="govuk-link">Redact</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_3_expanded">
@@ -88,7 +88,7 @@
           <tr class="govuk-table__row" id="result_4">
             <td class="govuk-table__cell" id="result_4_text">Test Ltd</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_4')" class="govuk-link">Change</a>
+              <a href="javascript:change_click('result_4')" class="govuk-link">Redact</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_4_expanded">
@@ -103,8 +103,12 @@
         </tbody>
       </table>
 
+      <p class="govuk-body">
+        <a href="#" class="govuk-link">Accounts after changes</a>
+      </p> 
+
       <a href="check-answers" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-        Save and continue
+        Review changes
       </a>
     </div>
   </div>
