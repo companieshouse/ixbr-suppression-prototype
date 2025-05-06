@@ -7,7 +7,7 @@ window.GOVUKPrototypeKit.documentReady(() => {
   // Add JavaScript here
 })
 
-function change_click(resultValue) {
+function select_click(resultValue) {
   if (resultValue == 'result_1') {
     var result_one = document.getElementById('result_1');
     var result_one_expanded = document.getElementById('result_1_expanded');
@@ -37,6 +37,60 @@ function change_click(resultValue) {
       result_four_expanded.classList.remove('govuk-visually-hidden');
   }
 }
+
+
+function redact_click(resultValue) {
+  if (resultValue == 'result_1') {
+    var result_one_new_text = document.getElementById('result_1_textbox');
+
+    result_one_new_text.value = 'Ben ##########';
+  } else if (resultValue == 'result_3') {
+    var result_one_new_text = document.getElementById('result_3_textbox');
+
+    result_one_new_text.value = 'Mr B ##########';
+  }
+}
+
+
+function change_click(resultValue) {
+  if (resultValue == 'result_1') {
+    var redact_link = document.getElementById('redact_link_1');
+    var change_link = document.getElementById('change_link_1');
+    var save_link = document.getElementById('save_link_1');
+
+    redact_link.classList.add('govuk-visually-hidden');
+    change_link.classList.add('govuk-visually-hidden');
+    save_link.classList.remove('govuk-visually-hidden');
+  
+  } else if (resultValue == 'result_2') {
+      var redact_link = document.getElementById('redact_link_2');
+      var change_link = document.getElementById('change_link_2');
+      var save_link = document.getElementById('save_link_2');
+
+      redact_link.classList.add('govuk-visually-hidden');
+      change_link.classList.add('govuk-visually-hidden');
+      save_link.classList.remove('govuk-visually-hidden');
+
+  } else if (resultValue == 'result_3') {
+      var redact_link = document.getElementById('redact_link_3');
+      var change_link = document.getElementById('change_link_3');
+      var save_link = document.getElementById('save_link_3');
+
+      redact_link.classList.add('govuk-visually-hidden');
+      change_link.classList.add('govuk-visually-hidden');
+      save_link.classList.remove('govuk-visually-hidden');
+
+  } else if (resultValue == 'result_4') {
+      var redact_link = document.getElementById('redact_link_4');
+      var change_link = document.getElementById('change_link_4');
+      var save_link = document.getElementById('save_link_4');
+
+      redact_link.classList.add('govuk-visually-hidden');
+      change_link.classList.add('govuk-visually-hidden');
+      save_link.classList.remove('govuk-visually-hidden');
+  }
+}
+
 
 function save_click(resultValue) {
   if (resultValue == 'result_1') {
@@ -86,6 +140,38 @@ function save_click(resultValue) {
 }
 
 
+function close_click(resultValue) {
+  if (resultValue == 'result_1') {
+    var result_one = document.getElementById('result_1');
+    var result_one_expanded = document.getElementById('result_1_expanded');
+
+    result_one.classList.remove('govuk-visually-hidden');
+    result_one_expanded.classList.add('govuk-visually-hidden');
+  
+  } else if (resultValue == 'result_2') {
+      var result_two = document.getElementById('result_2');
+      var result_two_expanded = document.getElementById('result_2_expanded');
+
+      result_two.classList.remove('govuk-visually-hidden');
+      result_two_expanded.classList.add('govuk-visually-hidden');
+
+  } else if (resultValue == 'result_3') {
+      var result_three = document.getElementById('result_3');
+      var result_three_expanded = document.getElementById('result_3_expanded');
+
+      result_three.classList.remove('govuk-visually-hidden');
+      result_three_expanded.classList.add('govuk-visually-hidden');
+
+  } else if (resultValue == 'result_4') {
+      var result_four = document.getElementById('result_4');
+      var result_four_expanded = document.getElementById('result_4_expanded');
+
+      result_four.classList.remove('govuk-visually-hidden');
+      result_four_expanded.classList.add('govuk-visually-hidden');
+  }
+}
+
+
 function undo_click(changeValue) {
   if (changeValue == 'change_1') {
     var change_one = document.getElementById('change_1');
@@ -100,14 +186,3 @@ function undo_click(changeValue) {
 }
 
 
-function replace_click(resultValue) {
-  if (resultValue == 'result_1') {
-    var result_one_new_text = document.getElementById('result_1_textbox');
-
-    result_one_new_text.value = 'Ben ##########';
-  } else if (resultValue == 'result_3') {
-    var result_one_new_text = document.getElementById('result_3_textbox');
-
-    result_one_new_text.value = 'Mr B ##########';
-  }
-}

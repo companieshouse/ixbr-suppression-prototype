@@ -13,11 +13,11 @@
     <div class="govuk-grid-column-full">
 
       <h1 class="govuk-heading-l">
-        Redaction of accounts
+        Redaction of account XXVOFNWB
       </h1>
 
         <p class="govuk-body">
-          <a href="#" class="govuk-link">Preview accounts filing: XXVOFNWB</a>
+          <a href="#" class="govuk-link">Accounts before changes</a>
         </p> 
       </p>
 
@@ -35,7 +35,7 @@
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header">Results from filing</th>
+            <th scope="col" class="govuk-table__header">Results</th>
             <th scope="col" class="govuk-table__header"></th>
           </tr>
         </thead>
@@ -43,61 +43,65 @@
           <tr class="govuk-table__row" id="result_1">
             <td class="govuk-table__cell" id="result_1_text">Ben Testington</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_1')" class="govuk-link">Redact</a>
+              <a href="javascript:select_click('result_1')" class="govuk-link">Select</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_1_expanded">
             <td class="govuk-table__cell">Ben Testington</td>
             <td class="govuk-table__cell">
               <textarea class="govuk-textarea" id="result_1_textbox" name="result_1_textbox" rows="3">Ben Testington</textarea>
-              <span style="padding-right: 20px;"><a href="javascript:replace_click('result_1')" class="govuk-link">Redact</a></span>
-              <span style="padding-right: 20px;"><a href="javascript:save_click('result_1')" class="govuk-link">Save</a></span>
-              <a href="#" class="govuk-link">Manual change</a>
+              <span id="redact_link_1" style="padding-right: 20px;"><a href="javascript:redact_click('result_1')" class="govuk-link">Redact</a></span>
+              <span id="change_link_1" style="padding-right: 20px;"><a href="javascript:change_click('result_1')" class="govuk-link">Manual change</a></span>
+              <span class="govuk-visually-hidden" id="save_link_1" style="padding-right: 20px;"><a href="javascript:save_click('result_1')" class="govuk-link">Save</a></span>
+              <span style="float: right;"><a href="javascript:close_click('result_1')" class="govuk-link">Close</a></span>
             </td>
           </tr>
           <tr class="govuk-table__row" id="result_2">
             <td class="govuk-table__cell" id="result_2_text">Tester Street</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_2')" class="govuk-link">Redact</a>
+              <a href="javascript:select_click('result_2')" class="govuk-link">Select</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_2_expanded">
             <td class="govuk-table__cell">Tester Street</td>
             <td class="govuk-table__cell">
               <textarea class="govuk-textarea" id="result_2_textbox" name="result_2_textbox" rows="3">Tester Street</textarea>
-              <span style="padding-right: 20px;"><a href="javascript:replace_click('result_2')" class="govuk-link">Redact</a></span>
-              <span style="padding-right: 20px;"><a href="javascript:save_click('result_2')" class="govuk-link">Save</a></span>
-              <a href="#" class="govuk-link">Manual change</a>
+              <span id="redact_link_2" style="padding-right: 20px;"><a href="javascript:redact_click('result_2')" class="govuk-link">Redact</a></span>
+              <span id="change_link_2" style="padding-right: 20px;"><a href="javascript:change_click('result_2')" class="govuk-link">Manual change</a></span>
+              <span class="govuk-visually-hidden" id="save_link_2" style="padding-right: 20px;"><a href="javascript:save_click('result_2')" class="govuk-link">Save</a></span>
+              <span style="float: right;"><a href="javascript:close_click('result_1')" class="govuk-link">Close</a></span>
             </td>
           </tr>
           <tr class="govuk-table__row" id="result_3">
             <td class="govuk-table__cell" id="result_3_text">Mr B Testington</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_3')" class="govuk-link">Redact</a>
+              <a href="javascript:select_click('result_3')" class="govuk-link">Select</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_3_expanded">
             <td class="govuk-table__cell">Mr B Testington</td>
             <td class="govuk-table__cell">
               <textarea class="govuk-textarea" id="result_3_textbox" name="result_3_textbox" rows="3">Mr B Testington</textarea>
-              <span style="padding-right: 20px;"><a href="javascript:replace_click('result_3')" class="govuk-link">Redact</a></span>
-              <span style="padding-right: 20px;"><a href="javascript:save_click('result_3')" class="govuk-link">Save</a></span>
-              <a href="#" class="govuk-link">Manual change</a>
+              <span id="redact_link_3" style="padding-right: 20px;"><a href="javascript:redact_click('result_3')" class="govuk-link">Redact</a></span>
+              <span id="change_link_3" style="padding-right: 20px;"><a href="javascript:change_click('result_3')" class="govuk-link">Manual change</a></span>
+              <span class="govuk-visually-hidden" id="save_link_3" style="padding-right: 20px;"><a href="javascript:save_click('result_3')" class="govuk-link">Save</a></span>
+              <span style="float: right;"><a href="javascript:close_click('result_3')" class="govuk-link">Close</a></span>
             </td>
           </tr>
           <tr class="govuk-table__row" id="result_4">
             <td class="govuk-table__cell" id="result_4_text">Test Ltd</td>
             <td class="govuk-table__cell">
-              <a href="javascript:change_click('result_4')" class="govuk-link">Redact</a>
+              <a href="javascript:select_click('result_4')" class="govuk-link">Select</a>
             </td>
           </tr>
           <tr class="govuk-table__row govuk-visually-hidden" id="result_4_expanded">
             <td class="govuk-table__cell">Test Ltd</td>
             <td class="govuk-table__cell">
               <textarea class="govuk-textarea" id="result_4_textbox" name="result_4_textbox" rows="3">Test Ltd</textarea>
-              <span style="padding-right: 20px;"><a href="javascript:replace_click('result_4')" class="govuk-link">Redact</a></span>
-              <span style="padding-right: 20px;"><a href="javascript:save_click('result_4')" class="govuk-link">Save</a></span>
-              <a href="#" class="govuk-link">Manual change</a>
+              <span id="redact_link_4" style="padding-right: 20px;"><a href="javascript:redact_click('result_4')" class="govuk-link">Redact</a></span>
+              <span id="change_link_4" style="padding-right: 20px;"><a href="javascript:change_click('result_4')" class="govuk-link">Manual change</a></span>
+              <span class="govuk-visually-hidden" id="save_link_4" style="padding-right: 20px;"><a href="javascript:save_click('result_4')" class="govuk-link">Save</a></span>
+              <span style="float: right;"><a href="javascript:close_click('result_4')" class="govuk-link">Close</a></span>
             </td>
           </tr>
         </tbody>
